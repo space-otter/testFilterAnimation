@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="52" height="47.468" viewBox="0 0 52 47.468">
+  <g id="Group_4595" data-name="Group 4595" transform="translate(-1043 -9426)">
+    <ellipse id="Ellipse_803" data-name="Ellipse 803" cx="13.5" cy="13" rx="13.5" ry="13" transform="translate(1043 9447)" fill="#661d56" opacity="0.448"/>
+    <g id="Icon" transform="translate(1047.5 9426.072)">
+      <rect id="Area" width="47" height="47" transform="translate(0.5 -0.072)" fill="#fcfcfc" opacity="0"/>
+      <g id="Icon-2" data-name="Icon" transform="translate(1.973 1.995)">
+        <rect id="Rect" width="31.565" height="31.565" rx="2" transform="translate(5.918 5.918)" fill="none" stroke="#3d3d3d" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+        <rect id="Rect-2" data-name="Rect" width="11.837" height="11.837" transform="translate(15.782 15.782)" fill="none" stroke="#3d3d3d" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+        <line id="Line" y2="5.918" transform="translate(15.782)" fill="none" stroke="#3d3d3d" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+        <line id="Line-2" data-name="Line" y2="5.918" transform="translate(27.619)" fill="none" stroke="#3d3d3d" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+        <line id="Line-3" data-name="Line" y2="5.918" transform="translate(15.782 37.483)" fill="none" stroke="#3d3d3d" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+        <line id="Line-4" data-name="Line" y2="5.918" transform="translate(27.619 37.483)" fill="none" stroke="#3d3d3d" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+        <line id="Line-5" data-name="Line" x2="5.918" transform="translate(37.483 15.782)" fill="none" stroke="#3d3d3d" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+        <line id="Line-6" data-name="Line" x2="5.918" transform="translate(37.483 25.646)" fill="none" stroke="#3d3d3d" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+        <line id="Line-7" data-name="Line" x2="5.918" transform="translate(0 15.782)" fill="none" stroke="#3d3d3d" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+        <line id="Line-8" data-name="Line" x2="5.918" transform="translate(0 25.646)" fill="none" stroke="#3d3d3d" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+    </g>
+  </g>
+</svg>

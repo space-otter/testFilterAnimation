@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="54.133" height="47" viewBox="0 0 54.133 47">
+  <g id="Group_4596" data-name="Group 4596" transform="translate(-1269 -9426)">
+    <ellipse id="Ellipse_804" data-name="Ellipse 804" cx="13.5" cy="13" rx="13.5" ry="13" transform="translate(1269 9447)" fill="#f97a7a"/>
+    <g id="Icon" transform="translate(1275.758 9426.072)">
+      <rect id="Area" width="47" height="47" transform="translate(0.242 -0.072)" fill="#fcfcfc" opacity="0"/>
+      <g id="Icon-2" data-name="Icon" transform="translate(1.972 7.913)">
+        <path id="Path" d="M44.869,14.275a5.483,5.483,0,0,0-3.828-3.946C37.648,9.5,24.075,9.5,24.075,9.5s-13.573,0-16.966.908a5.483,5.483,0,0,0-3.828,3.946,57.234,57.234,0,0,0-.907,10.435A57.22,57.22,0,0,0,3.282,35.3a5.486,5.486,0,0,0,3.828,3.788C10.5,40,24.075,40,24.075,40s13.573,0,16.966-.907a5.486,5.486,0,0,0,3.828-3.946,57.273,57.273,0,0,0,.907-10.357,57.148,57.148,0,0,0-.908-10.515Z" transform="translate(-2.374 -9.5)" fill="none" stroke="#3d3d3d" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+        <path id="Path-2" data-name="Path" d="M23.156,33.042,34.5,26.591,23.156,20.14Z" transform="translate(-5.893 -11.302)" fill="none" stroke="#3d3d3d" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+    </g>
+  </g>
+</svg>
