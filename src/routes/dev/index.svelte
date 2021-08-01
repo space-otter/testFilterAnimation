@@ -38,7 +38,7 @@
             qs_state: "-",
         },  
         {
-            url: "c003",
+            url: "/dev/c003",
             id: "C003",
             description: "Teaser Link List",
             status: status.new,
