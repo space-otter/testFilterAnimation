@@ -2,15 +2,28 @@
     import { onMount } from "svelte"
 
     let nojs = true
+
+    onMount(() => {
+        nojs = false
+    })
 </script>
 
 <div class="container" class:nojs>
     <div class="main">
-        <p class="slogan g-font-primary-bold">
-            <span>We create</span>
-            <span>experiences</span>
-            <span>for the future.</span>
-        </p>
+        <div class="slogan g-font-primary-bold">
+            <div class="overlay-wrapper">
+                <div class="overlay"></div>
+                <span>We create</span>
+            </div>
+            <div class="overlay-wrapper">
+                <div class="overlay"></div>
+                <span>experiences</span>
+            </div>
+            <div class="overlay-wrapper">
+                <div class="overlay"></div>
+                <span>for the future.</span>
+            </div>
+        </div>
         <div class="tag">
         </div>
     </div>    
@@ -27,13 +40,21 @@
 {/if}
 
 <style lang="scss">
+    p {
+        margin: 0;
+    }
     .main {
+        --container-bg: #000000;
+        --main-fg-color: #ffffff;
+
         min-height: 100vh;
 
-        background-color: #000000;
-        color: #ffffff;
+        background-color: var(--container-bg);
+        color: var(--main-fg-color);
 
         .slogan {
+            --slogan-fg-color: var(--main-fg-color);
+
             display: flex;
             flex-direction: column;
             flex-wrap: nowrap;
@@ -45,29 +66,56 @@
                 position: relative;
                 display: block;
 
-                height: 0.25rem;
+                height: 0.35rem;
                 width: 2ch;
 
                 margin-top: 0.5em;
 
-                background-color: #ffffff;
+                background-color: var(--slogan-fg-color);
             }
 
             & > * {
                 flex: 0 1 auto;
             }
 
-            & > span {
-                display: inline-block;
-
-                & + span {
+            & > .overlay-wrapper {
+                position: relative;
+                display: block;
+                
+                width: max-content;
+                overflow: hidden;
+                & + .overlay-wrapper {
                     margin-top: 0.25em;
                 }
+
+                & > .overlay {
+                    position: absolute;
+
+                    width: 100%;
+                    height: 100%;
+
+                    background-color: var(--slogan-fg-color);
+
+                    transform: skewX(0) translateX(0) translateZ(0);
+
+                    animation: reveal 2s linear 0s 1 alternate forwards;
+                }
+            }
+
+            & > span {
+                position: relative;
+                display: inline-block;
+                //border: 2px solid #ffffff;
             }
         }
     }
 
-    p {
-        margin: 0;
+    @keyframes reveal {
+        from {
+            transform: skewX(0) translateX(0) translateZ(0);
+        }
+        to {
+            transform: skewX(20deg) translateX(-110%) translateZ(0);
+        }
     }
 </style>
