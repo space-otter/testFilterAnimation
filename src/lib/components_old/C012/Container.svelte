@@ -1,6 +1,6 @@
 <script>
-    let itemBgUrl = "url(c012-image-02.jpg)";
-    let containerBgUrl = "url(c012-blur-02.png)";
+    let itemBgUrl = "url(/c012-image-02.jpg)";
+    let containerBgUrl = "url(/c012-blur-02.png)";
 </script>
 
 <div 

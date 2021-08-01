@@ -4,6 +4,7 @@
 
 <div class="container">
     <h2 class="g-font-primary-bold">{name}</h2>
+    <a class="g-font-primary-bold" href="/dev">Go back</a>
     <div class="component">
         <slot />
     </div>
@@ -17,6 +18,12 @@
         padding: 2rem;
 
         h2 {
+            color: #ffffff;
+        }
+
+        a {
+            display: block;
+            padding: 1em 0;
             color: #ffffff;
         }
 

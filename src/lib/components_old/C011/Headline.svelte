@@ -1,4 +1,4 @@
-<h3>
+<h3 class="g-font-primary-bold">
     Einmal alles, bitte!
 </h3>
 

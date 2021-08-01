@@ -1,6 +1,6 @@
 <script>
-    import Container from "$lib/components/C012/Container.svelte"
-    import CTA from "$lib/components/C012/CTA.svelte";
+    import Container from "$lib/components_old/C012/Container.svelte"
+    import CTA from "$lib/components_old/C012/CTA.svelte";
 </script>
 
 <Container>

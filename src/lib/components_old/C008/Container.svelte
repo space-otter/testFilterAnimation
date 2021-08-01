@@ -6,7 +6,7 @@
     </section>
     <div class="bg-media">
         <video muted autoplay loop>
-            <source src="cologne.mp4" type="video/mp4" />
+            <source src="/cologne.mp4" type="video/mp4" />
         </video>
     </div>
 </div>

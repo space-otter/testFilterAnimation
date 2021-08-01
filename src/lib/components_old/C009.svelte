@@ -1,7 +1,7 @@
 <script>
-    import Headline from "$lib/components/C009/Headline.svelte";
-    import Carousell from "$lib/components/C009/Carousell.svelte";
-    import Skeleton from "$lib/components/C009/Skeleton.svelte";
+    import Headline from "$lib/components_old/C009/Headline.svelte";
+    import Carousell from "$lib/components_old/C009/Carousell.svelte";
+    import Skeleton from "$lib/components_old/C009/Skeleton.svelte";
 </script>
 
 <Skeleton>

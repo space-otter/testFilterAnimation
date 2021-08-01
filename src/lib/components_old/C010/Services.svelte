@@ -1,6 +1,6 @@
 <script>
-    import CTACard from "$lib/components/C010/CTACard.svelte";
-    import ServiceCard from "$lib/components/C010/ServiceCard.svelte";
+    import CTACard from "$lib/components_old/C010/CTACard.svelte";
+    import ServiceCard from "$lib/components_old/C010/ServiceCard.svelte";
 </script>
 
 <div class="services">

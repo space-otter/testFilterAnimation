@@ -1,5 +1,5 @@
 <script>
-    import MemberCard from "$lib/components/C007/MemberCard.svelte";
+    import MemberCard from "$lib/components_old/C007/MemberCard.svelte";
 
     let members = [
         {
@@ -7,7 +7,7 @@
             position: "Concept Specialist",
             additional: "Co-Founder",
             image: {
-                url: "TAN-Shooting-01-Torben.png",
+                url: "/TAN-Shooting-01-Torben.png",
                 alt: "",
             },
             address: {
@@ -21,7 +21,7 @@
             position: "UX Specialist",
             additional: "Co-Founder",
             image: {
-                url: "DFU-Shooting-03-Dominik.png",
+                url: "/DFU-Shooting-03-Dominik.png",
                 alt: "",
             },
             address: {
@@ -35,7 +35,7 @@
             position: "Brand Specialist",
             additional: "",
             image: {
-                url: "LRU-Shooting-03-Luca.png",
+                url: "/LRU-Shooting-03-Luca.png",
                 alt: "",
             },
             address: {
