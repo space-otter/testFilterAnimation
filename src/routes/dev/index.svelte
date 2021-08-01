@@ -2,6 +2,7 @@
     let status = {
         done: "Produktionsfertig",
         progress: "In Bearbeitung",
+        active: "Aktiv in Entwicklung",
         blocked: "Blockiert",
         new: "Neu"
     }
@@ -17,7 +18,7 @@
             url: "/dev/c000",
             id: "C000",
             description: "Overlay Intro",
-            status: status.progress,
+            status: status.active,
             deadline: "01.08.2021",
             qs_state: "-",
         },  
@@ -174,6 +175,7 @@
                 <div id={comp.id}
                     class="comp"
                     class:done={comp.status === status.done}
+                    class:active={comp.status === status.active}
                     class:progress={comp.status === status.progress}
                     class:blocked={comp.status === status.blocked}>
                     <a href={comp.url}>
@@ -240,6 +242,11 @@
 
             &.done {
                 background-color: #D2FAE6;
+                color: #1F2138;
+            }
+
+            &.active {
+                background-color: #AEE1E1;
                 color: #1F2138;
             }
 

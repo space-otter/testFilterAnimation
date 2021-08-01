@@ -2,8 +2,6 @@
     import { onMount } from "svelte"
 
     let nojs = true
-
-
 </script>
 
 <div class="container" class:nojs>
@@ -14,7 +12,6 @@
             <span>for the future.</span>
         </p>
         <div class="tag">
-
         </div>
     </div>    
     <div class="">
@@ -41,6 +38,21 @@
             flex-direction: column;
             flex-wrap: nowrap;
 
+            font-size: 2.25rem;
+
+            &::after {
+                content: "";
+                position: relative;
+                display: block;
+
+                height: 0.25rem;
+                width: 2ch;
+
+                margin-top: 0.5em;
+
+                background-color: #ffffff;
+            }
+
             & > * {
                 flex: 0 1 auto;
             }
@@ -49,7 +61,7 @@
                 display: inline-block;
 
                 & + span {
-                    margin-top: 0.5em;
+                    margin-top: 0.25em;
                 }
             }
         }
