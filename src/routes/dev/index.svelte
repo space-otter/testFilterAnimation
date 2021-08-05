@@ -191,10 +191,17 @@
             {/each}
             </div>
         </article>
-        <article>
-            <p>
-                Das ist mein Seiteninhalt
-            </p>
+        <article class="sites">
+            <h2 class="g-font-primary-bold">Seiten</h2>
+            <a href="/dev/landing">
+                <ul class="g-font-secondary-regular">
+                    <li><strong>ID:</strong> index</li>
+                    <li><strong>Status:</strong> In Bearbeitung</li>
+                    <li><strong>Beschreibung:</strong> Landing Page</li>
+                    <li><strong>Deadline:</strong> -</li>
+                    <li><strong>QS:</strong> -</li>
+                </ul>
+            </a>
         </article>
     </section>
 </div>
@@ -285,4 +292,36 @@
             }
         }
     }
+
+    .sites {
+        display: flex;
+        flex-direction: column;
+
+        & > a {
+            display: block;
+            padding: 1rem;
+            background-color: whitesmoke;
+            border: 2px solid #6AEDAC;
+            transition: background-color 200ms;
+            border-radius: 1rem;
+            text-decoration: none;
+            color: #1F2138;
+            transition: color 200ms;
+
+            & > ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+
+                & > li + li {
+                    margin-top: 0.75em;
+                }
+            }
+
+            &:hover {
+                background-color: #1F2138;
+                color: white;
+           }
+        }
+}
 </style>

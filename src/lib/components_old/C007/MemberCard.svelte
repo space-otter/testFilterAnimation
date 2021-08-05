@@ -3,7 +3,7 @@
     let name = "Torben Andresen";
     let position = "Concept Specialist";
     let image = {
-        url: "TAN-Shooting-01-Torben.png",
+        url: "/TAN-Shooting-01-Torben.png",
         alt: ""
     }
     let address = {

@@ -1,16 +1,20 @@
 <script>
     import { onMount } from "svelte"
 
+    // component states
     let nojs = true
+    let onLoadAnimation = false
 
     onMount(() => {
         nojs = false
+        onLoadAnimation = true
     })
 </script>
 
 <div class="container" class:nojs>
     <div class="main">
-        <div class="slogan g-font-primary-bold">
+        <div class="slogan g-font-primary-bold"
+            class:onLoadAnimation>
             <div class="overlay-wrapper">
                 <div class="overlay"></div>
                 <span>We create</span>
@@ -23,6 +27,7 @@
                 <div class="overlay"></div>
                 <span>for the future.</span>
             </div>
+            <div class="underline-box"></div>
         </div>
         <div class="tag">
         </div>
@@ -40,16 +45,20 @@
 {/if}
 
 <style lang="scss">
+    .container {
+        padding: 5rem;
+        background-color: #000000;
+    }
     p {
         margin: 0;
     }
     .main {
-        --container-bg: #000000;
+        --main-bg: #000000;
         --main-fg-color: #ffffff;
 
         min-height: 100vh;
 
-        background-color: var(--container-bg);
+        background-color: var(--main-bg);
         color: var(--main-fg-color);
 
         .slogan {
@@ -60,19 +69,6 @@
             flex-wrap: nowrap;
 
             font-size: 2.25rem;
-
-            &::after {
-                content: "";
-                position: relative;
-                display: block;
-
-                height: 0.35rem;
-                width: 2ch;
-
-                margin-top: 0.5em;
-
-                background-color: var(--slogan-fg-color);
-            }
 
             & > * {
                 flex: 0 1 auto;
@@ -98,15 +94,18 @@
 
                     transform: skewX(0) translateX(0) translateZ(0);
 
-                    animation: reveal 2s linear 0s 1 alternate forwards;
                 }
             }
+
 
             & > span {
                 position: relative;
                 display: inline-block;
                 //border: 2px solid #ffffff;
             }
+        }
+        .onLoadAnimation .overlay {
+                animation: reveal 2s linear 1s alternate forwards;
         }
     }
 
@@ -116,6 +115,15 @@
         }
         to {
             transform: skewX(20deg) translateX(-110%) translateZ(0);
+        }
+    }
+
+    @keyframes grow {
+        from {
+            transform: skewX(10deg) translateX(110%) translateZ(0);
+        }
+        to {
+            transform: skewX(0) translateX(0) translateZ(0);
         }
     }
 </style>
